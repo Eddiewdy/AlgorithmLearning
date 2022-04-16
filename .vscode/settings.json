@@ -65,6 +65,9 @@
         "xtree": "cpp",
         "xlocale": "cpp",
         "queue": "cpp",
-        "stack": "cpp"
+        "stack": "cpp",
+        "cstring": "cpp",
+        "set": "cpp",
+        "map": "cpp"
     }, // 格式化时调整include的顺序（按字母排序）
 }
