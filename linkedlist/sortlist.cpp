@@ -38,15 +38,20 @@ int main(int argc, char const *argv[])
         count++;
         p = node[p].next;
     }
-    sort(node, node + maxn, cmp);
-    printf("%d %05d\n", count, node[0].addr);
-    for (int i = 0; i < count; i++)
+    if(count == 0)
     {
-        if(i != count-1)
+        printf("0 -1");
+    } else {
+        sort(node, node + maxn, cmp);
+        printf("%d %05d\n", count, node[0].addr);
+        for (int i = 0; i < count; i++)
         {
-            printf("%05d %d %05d\n", node[i].addr, node[i].data, node[i+1].addr);
-        } else {
-            printf("%05d %d -1", node[i].addr, node[i].data);
+            if(i != count-1)
+            {
+                printf("%05d %d %05d\n", node[i].addr, node[i].data, node[i+1].addr);
+            } else {
+                printf("%05d %d -1\n", node[i].addr, node[i].data);
+            }
         }
     }
     return 0;
