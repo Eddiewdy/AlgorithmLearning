@@ -4,8 +4,8 @@
 #include<set>
 #include<string>
 using namespace std;
-map<string, set<int>> mpTitle, mpAuthor, mpKey, mpPub, mpYear;
-void query(map<string, set<int>>& mp, string& str)
+map<string, set<int> > mpTitle, mpAuthor, mpKey, mpPub, mpYear;
+void query(map<string, set<int> >& mp, string& str)
 {
     if(mp.find(str) == mp.end())
         printf("Not Found\n");
