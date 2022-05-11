@@ -1,6 +1,7 @@
 #include<stack>
 #include<cstdio>
 #include<algorithm>
+#include<cstring>
 #include<queue>
 using namespace std;
 #define typename int
