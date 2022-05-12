@@ -1,12 +1,9 @@
 #include<stack>
 #include<cstdio>
-#include<algorithm>
-#include<cstring>
-#include<queue>
 using namespace std;
 #define typename int
-int pre[100];
-int in[100];
+int pre[50];
+int in[50];
 int n;
 struct node
 {
@@ -45,26 +42,6 @@ node* create_with_pre_in(int preL, int preR, int inL, int inR)
     return root;
 }
 int num = 0;
-void bfs(node *root)
-{
-    queue<node*> q;
-    q.push(root);
-    while(!q.empty())
-    {
-        node *now = q.front();
-        q.pop();
-        printf("%d", now->data);
-        num++;
-        if(num<n)
-        {
-            printf(" ");
-        }
-        if(now->lnode!=NULL)
-            q.push(now->lnode);
-        if(now->rnode!=NULL)
-            q.push(now->rnode);
-    }
-}
 void postOrder(node* root)
 {
     if(root == NULL)
@@ -87,7 +64,7 @@ int main(int argc, char const *argv[])
     for (int i = 0; i < 2*n; i++)
     {
         scanf("%s", str);
-        if(strcmp(str,"Push") == 0)
+        if(str == "Push")
         {
             scanf("%d", &x);
             pre[preIndex++]=x;
