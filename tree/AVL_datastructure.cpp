@@ -93,3 +93,13 @@ void insert(node* &root , int v)
         }
     }
 }
+
+node* Create(int data[], int n)
+{
+    node* root = NULL;
+    for (int i = 0; i < n; i++)
+    {
+        insert(root, data[i]);
+    }
+    return root;
+}
