@@ -1,0 +1,1 @@
+find -x ./ -name 'A[0-9][0-9][0-9][0-9]' -o -name '*.exe' -delete
