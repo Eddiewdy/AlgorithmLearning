@@ -1,7 +1,0 @@
-{
-    "files.associations": {
-        "__bit_reference": "cpp",
-        "__mutex_base": "cpp",
-        "string": "cpp"
-    }
-}
