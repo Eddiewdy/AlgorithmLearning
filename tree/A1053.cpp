@@ -60,7 +60,7 @@ int main(int argc, char const *argv[])
         for (int j = 0; j < num; j++)
         {
             scanf("%d", &child);
-            Node[parent].child.emplace_back(child);
+            Node[parent].child.push_back(child);
         }
         sort(Node[parent].child.begin(), Node[parent].child.end(), cmp);
     }
